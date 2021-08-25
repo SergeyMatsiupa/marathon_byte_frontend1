@@ -22,7 +22,10 @@ body {
     background-image: url('../img/background_top.png');
     color:white;
     text-align: center;
-
+    padding: 80px 0 162px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 h6 {
@@ -42,48 +45,73 @@ h1 {
 
 #main_section_3 {
     background-image: url("../img/background_order_now.png");
-    height: 390px;
-    padding: 119px 0px 0px 0px;
+    color:white;
+    text-align: center;
+    padding: 147px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.back_image_sections {
-    color: white;
-    text-align: center;
-    line-height: 57px;
-}
 
 h2 {
     font-weight: bold;
     font-size: 40px;
+    line-height: 57px
 }
 
 button {
     color: white;
-    border: 1px solid;
-    font-weight: 700;
+    border: 1px solid white;
+    font-weight: bold;
 }
 
 .buttons_top {
     width: 236px;
     height: 68px;
     border-radius: 30px;
+    line-height: 38px;
+    font-size: 24px;
 }
 
 .buttons_top:first-of-type {
     background: #FA4A0C;
     border: #FA4A0C;
+    margin-right: 67px;
 }
+
+.buttons_top:last-of-type {
+    background: none;
+}
+
+#ord_for_hung_capt {
+    margin-bottom: 54px;
+}
+
+
+
+#av_on_store_capt {
+    margin-top: 20px;
+    margin-bottom: 49px;
+}
+
+
 
 .buttons_bottom {
-    padding: 18px 31px 18px 31px;
     border-radius: 10px;
+    font-size: 16px;
+    line-height: 28px;
+
 }
 
-.buttons_colored {
+.buttons_bottom:first-of-type {
     background: #FA4A0C;
     border: #FA4A0C;
+    margin-right: 16px;
+    padding: 18px 31px 18px 31px;
 }
 
-.buttons_transparent {
-    background: rgba(0, 0, 0, 0);
+.buttons_bottom:last-of-type {
+    background: none;
+    padding: 16px 45px;
 }
