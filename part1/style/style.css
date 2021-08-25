@@ -1,13 +1,43 @@
 body {
-    max-width: 1105px;
     background-color: white;
-    margin: 0 auto;
     font-size: 24px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: 38px;
     letter-spacing: 0.2px;
+}
+
+.width_container {
+    max-width: 1105px;
+    margin: 0 auto;
+}
+
+.display_2col_container {
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+
+#main_section_1 {
+    background-image: url('../img/background_top.png');
+    color:white;
+    text-align: center;
+
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px
+}
+
+h1 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 80px;
+    max-width: 750px;
+    margin: 10px auto;
 }
 
 #main_section_3 {
@@ -30,7 +60,18 @@ h2 {
 button {
     color: white;
     border: 1px solid;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.buttons_top {
+    width: 236px;
+    height: 68px;
+    border-radius: 30px;
+}
+
+.buttons_top:first-of-type {
+    background: #FA4A0C;
+    border: #FA4A0C;
 }
 
 .buttons_bottom {
