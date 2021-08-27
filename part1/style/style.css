@@ -14,8 +14,32 @@ body {
 }
 
 .display_2col_container {
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin: 40px auto;
 }
+
+.nav-li {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.nav-li:not(:last-of-type){
+    margin-right: 90px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #FA4A0C;
+}
+
 
 
 #main_section_1 {
@@ -43,6 +67,44 @@ h1 {
     margin: 10px auto;
 }
 
+h2 {
+    font-family: Poppins;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    text-align: center;
+    margin: 56px;
+}
+
+.mobile {
+    /* display: flex;
+    justify-content: space-between; */
+    /* margin-bottom: 60px; */
+    margin: 70px auto 108px auto;
+}
+
+.mobile-pretitle {
+    font-weight: bold;
+    line-height: 36px;
+    color: #FA4A0C;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    max-width: 570px;
+    margin: 17px auto; 
+}
+
+.mobile-text {
+    color: #737373;
+    max-width: 467px;
+    margin: 27px 0 0 0; 
+}
+
+
 #main_section_3 {
     background-image: url("../img/background_order_now.png");
     color:white;
@@ -51,10 +113,11 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 80px 0 101px 0;
 }
 
 
-h2 {
+h4 {
     font-weight: bold;
     font-size: 40px;
     line-height: 57px
@@ -114,4 +177,12 @@ button {
 .buttons_bottom:last-of-type {
     background: none;
     padding: 16px 45px;
+}
+
+#subtitle {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    
 }
