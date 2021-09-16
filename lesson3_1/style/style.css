@@ -1,0 +1,14 @@
+.text1{
+    color: rgb(156, 26, 26);
+    font-weight: normal;
+}
+.button1{
+    background-color: rgba(220, 110, 66, 0.5);
+    color: white;
+    border: 1px solid #000102;
+    border-radius: 5px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    box-shadow: -15px -17px 31px 5px rgba(0,0,0,0.69);
+    opacity: 0.5;
+}

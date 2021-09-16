@@ -1,0 +1,45 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.header-li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-ul {
+    text-align: center;
+}
+
+.header-li > a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #BD6600;
+    text-decoration: none;
+}
+
+.header {
+    padding: 40px 0px;
+}
+
+.bg-section {
+    padding: 112px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/bg.png");
+    color: white;
+}
+
+.bg-text {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    text-align: center;
+}
