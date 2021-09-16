@@ -62,9 +62,14 @@ body {
 }
 
 .bg-section-col {
-    padding: 133px 274px;
+    padding: 133px 205px;
     text-align: center;
     background-color: #5C98AB;
+    box-sizing: border-box;
 }
 
-
+.bg-section-col-text {
+    color: white;
+    font-size: 36px;
+    line-height: 49px;
+}
