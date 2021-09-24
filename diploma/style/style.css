@@ -1,5 +1,6 @@
 body {
     font-family: 'Work Sans', sans-serif;
+    background-color: white;
 }
 
 .header {
@@ -79,6 +80,7 @@ body {
     padding: 17px 28px;
     border-radius: 2px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -114,4 +116,117 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.section-categories {
+    background-color: rgba(0, 161, 198, 0.07);
+    padding: 110px 100px;
+    color: #2B292D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-categories-text {
+    max-width: 555px;
+    text-align: center;
+}
+
+.text-block-caption-small {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.text-block-caption-big {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    padding-top: 24px;
+}
+
+.text-block-text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    padding: 30px 0 30px 0;
+}
+
+.button_white {
+    border: none;
+    font-size: 18px;
+    line-height: 13px;
+    color: black;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    padding: 17px 28px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button_white:hover {
+    background: #3040C4;
+    color: black;
+    transition: 1s;
+}
+
+.categories-images {
+    display: grid;
+    grid-template-columns: 262px 262px 262px 262px;
+    grid-template-rows: 300px;
+    grid-gap: 30px;
+    padding: 111px 0 0 0;
+}
+
+
+.categories-images-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 0 33px 0;
+    justify-content: space-between;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.categories-images-item:hover {
+    background: #3040C4;
+    color: white;
+    transition: 1s;
+}
+
+.container-grid-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.container-grid-photo-text {
+    max-width: 554px;
+}
+
+.text-block-caption-big-p {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    padding-top: 90px;
+    color: black;
+}
+
+.container-grid-photo-img {
+    display: grid;
+    grid-template-columns: 347px 347px 347px;
+    grid-template-rows: 208px 208px 208px;
+    grid-gap: 50px;
+}
+
+.container-grid-photo-img-item {
+
+}
+
+.container-grid-photo-img-item:nth-child(3), .container-grid-photo-img-item:nth-child(4){
+    grid-row: span 2;
 }
