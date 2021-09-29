@@ -411,7 +411,8 @@ body {
     }
     .info-flex {
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .section-categories {
@@ -447,6 +448,13 @@ body {
         "four three" 
         "four five" 
         "six two";
+    }
+    .info-flex__text-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* justify-content: left; */
+        /* text-align: left; */
     }
 }
 
