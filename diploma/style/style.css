@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1090px;
     margin: 0 auto;
 }
 
@@ -102,6 +102,10 @@ body {
     color: #2B292D;
 }
 
+.container-what-who > div {
+    max-width: 47%;
+}
+
 .container-what-who > div > p:first-child {
     font-weight: bold;
     padding-bottom: 20px;
@@ -120,7 +124,7 @@ body {
 
 .section-categories {
     background-color: rgba(0, 161, 198, 0.07);
-    padding: 110px 100px;
+    padding: 11% 9%;
     color: #2B292D;
     display: flex;
     flex-direction: column;
@@ -181,14 +185,13 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-gap: 30px;
+    /* grid-template-rows: 1fr; */
+    grid-gap: 2.5%;
     padding: 111px 0 0 0;
 }
 
 
 .categories-images-item {
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,6 +199,9 @@ body {
     justify-content: space-between;
     border-radius: 8px;
     cursor: pointer;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 
 .categories-images-item:hover {
@@ -273,13 +279,14 @@ body {
 
 
 .busy {
-    padding: 100px 0;
+    /* padding: 100px 0; */
 }
 
 .busy-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .text-mini__blue {
@@ -318,13 +325,24 @@ body {
     margin-bottom: 45px;
 }
 
+.busy__line-between {
+    /* display: inline-block; */
+    background-color: rgba(0, 0, 1, 0.1);
+    margin-top: 60px;
+    width: 225px;
+    height: 3px;
+    /* margin-left: 0; */
+    /* margin-right: auto; */
+}
+
+
 
 @media (max-width: 1140px) {
     .container {
         max-width: 950px;
     }
     .busy {
-        padding: 80px 0;
+        /* padding: 80px 0; */
     }
     .info-p {
         max-width: 300px;
@@ -338,7 +356,7 @@ body {
 
 @media (max-width: 1000px) {
     .container {
-        max-width: 850px;
+        max-width: 750px;
     }
     .busy-flex {
         flex-direction: column;
@@ -368,12 +386,16 @@ body {
         display: none;
     }
     .categories-images-item {
-        padding: 22px 25px 0 25px;
-        /* min-width: 25%; */
+        /* padding: 22px 25px 0 25px; */
+        width: 100%px;
     }
     .categories-images-item > img {
-        width: 100%;
-        height: 100%;
+        /* display: none; */
+        /* width: 70%; */
+        /* height: 100%; */
+    }
+    .busy__line-between {
+        display: none;
     }
 }
 
@@ -383,7 +405,7 @@ body {
         padding: 15px 0;
     }
     .container {
-        max-width: 500px;
+        max-width: 550px;
     }
     .section-what-who {
         padding: 30px 0 30px 0;
@@ -437,7 +459,7 @@ body {
         justify-content: center;
     }
     .text-block-text {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     .info {
         padding: 0px 0 30px 0;
@@ -446,15 +468,19 @@ body {
         display: none;
     }
     .section-categories {
-        padding: 33px 150px 50px 150px;
+        padding: 33px 100px 50px 100px;
     }
     .categories-images {
         display: grid;
         width: 100%;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 30px;
         grid-column-gap: 50px;
         padding: 35px 0 0 0;
+    }
+    .categories-images-item {
+        /* padding: 22px 25px 0 25px; */
+        width: 100%;
     }
     .container-grid-photo {
         padding: 70px 0 70px 0;
@@ -477,6 +503,9 @@ body {
         flex-direction: column;
         /* justify-content: left; */
         /* text-align: left; */
+    }
+    .container-what-who > div {
+        max-width: 100%;
     }
 }
 
@@ -515,10 +544,10 @@ body {
         max-width: 310px;
     }
     .section-what-who {
-        padding: 69px 0 69px 0;
+        padding: 50px 0 50px 0;
     }
     .container-what-who > div:nth-child(2) {
-        margin-top: 69px;
+        margin-top: 50px;
     }
     .section-logos {
         padding: 29px 0 83px 0;
@@ -539,10 +568,7 @@ body {
         line-height: 40px;
     }
     .busy__line-between {
-        background-color: rgba(0, 0, 1, 0.1);
-        margin-top: 120px;
-        width: 225px;
-        height: 3px;
+        display: block;
     }
     .info {
         padding: 0px 0 45px 0;
@@ -550,15 +576,17 @@ body {
     .info-flex {
         flex-direction: column;
     }
-    .info-flex > div
+    .info-flex > div:nth-child(n)
     {
+        display: flex;
         margin-bottom: 45px;
     }
     .section-categories {
         padding: 83px 29px 74px 29px;
     }
     .button, .button_white {
-        padding: 27px 128px;
+        /* padding: 20px 50px; */
+        width: 65%;
         margin-bottom: 17px;
     }
     .categories-images {
@@ -567,12 +595,16 @@ body {
         padding: 41px 0 0 0;
     }
     .categories-images-item {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
-        background-blend-mode: overlay, normal;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        width: 100%;
+        /* height: 402px; */
+    }
+    .categories-images-item > img {
+        /* display: none; */
+        /* width: 70%; */
+        height: 100%;
     }
     .container-grid-photo {
-        padding: 120px 0 75px 0;
+        padding: 80px 0 30px 0;
     }
     .text-block-caption-big-p {
         font-size: 40px;
@@ -589,6 +621,15 @@ body {
     .container-grid-photo-img > img:nth-child(2) {
         grid-area: two;
         display: none;
+    }
+    .info-p {
+        text-align: left;
+    }
+    .info-flex__text-div {
+        align-items: flex-start;
+    }
+    .container-categories-text > div > .button, .button_white {
+        width: 100%;
     }
 }
 
@@ -624,7 +665,7 @@ body {
         padding: 62px 22px 56px 22px;
     }
     .button, .button_white {
-        padding: 20px 96px;
+        /* padding: 20px 96px; */
         margin-bottom: 13px;
     }
     .categories-images {
@@ -677,7 +718,7 @@ body {
         padding: 55px 20px 50px 20px;
     }
     .button, .button_white {
-        padding: 18px 85px;
+        /* padding: 18px 85px; */
         margin-bottom: 12px;
     }
     .categories-images {
