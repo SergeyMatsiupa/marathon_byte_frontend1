@@ -79,6 +79,7 @@ body {
 
 .content-container__imgs {
     display: flex;
+    flex: 1;
 }
 
 .content-container__form__caption {
@@ -90,9 +91,10 @@ body {
 
 .content-container__imgs__img-block {
     /* padding: ; */
-    background-color: #FB8F1D;
+    /* background-color: #FB8F1D; */
     /* margin-left: 20%; */
     position: relative;
+    width: 100%;
 }
 
 .content-container__imgs__img {
@@ -135,4 +137,13 @@ body {
     border: none;
     color: white;
     background: #1ABE84;
+}
+
+.content-container__img__label {
+     background-color: white;
+     padding: 20px 15px;
+     border-radius: 0px 10px 0 0;
+     position: absolute;
+     left: 20%;
+     bottom: 0px;
 }
