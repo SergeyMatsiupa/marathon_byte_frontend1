@@ -1,0 +1,24 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    background: burlywood;
+    /* transform: translate(200px, 500px); */
+    /* transform: translate(-50%, -50%); */
+    /* transform-origin: 0 50px; */
+    /* transform-origin: bottom; */
+    transform-origin: center;
+
+}
+
+.circle:hover {
+    /* transform: scale(1.2, 2); */
+    /* transform: rotate(50deg); */
+    /* transform: skew(20deg, 40deg); */
+    transform: scale(-1, 1);
+}
+
+p, span {
+    display: inline-block;
+    transform: translate(50%, 50%);
+}
