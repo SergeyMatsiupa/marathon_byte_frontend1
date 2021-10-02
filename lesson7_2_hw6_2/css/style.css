@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: white;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -23,8 +27,13 @@
     text-decoration: none;
 }
 
-.nav__link-active {
+.nav__link_active {
     color: black;
+    font-weight: 500;
+}
+
+.button-container {
+    
 }
 
 .button-container__button {
@@ -35,9 +44,10 @@
     width: 133px;
     background: #FB8F1D;
     color: white;
+    font-weight: 500;
 }
 
-.button-container__button-transparent {
+.button-container__button_transparent {
     color: #FB8F1D;
     background: white;
 }
@@ -50,4 +60,79 @@
 
 .container__header {
     margin: 35px auto;
+    font-family: Inter;
+}
+
+.content-container {
+    display: flex;
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.content-container__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.content-container__imgs {
+    display: flex;
+}
+
+.content-container__form__caption {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    max-width: 247px;
+}
+
+.content-container__imgs__img-block {
+    /* padding: ; */
+    background-color: #FB8F1D;
+    /* margin-left: 20%; */
+    position: relative;
+}
+
+.content-container__imgs__img {
+    width: 80%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.content-container__form__line {
+    background-color: black;
+    width: 92px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 10px 0 25px 0;
+}
+
+.content-container__form__field {
+    width: 70%;
+    padding: 17px 30px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.content-container__form__field::placeholder {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.content-container__form__submit {
+    width: 30%;
+    border: none;
+    color: white;
+    background: #1ABE84;
 }
