@@ -1,0 +1,40 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: box-left;
+    animation-duration: 2s;
+    /* animation-timing-function: cubic-bezier(1, 1, 0.22, 1); */
+    /* animation-timing-function: ease-in; */
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    position: relative;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+@keyframes box-left {
+    /* from {
+        left: 0px;
+    } to {
+        left: 300px;
+    } */
+    0% {
+        left: 0px;
+    } 
+    25% {
+        background-color: aquamarine;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    100% {
+        left: 300px;
+    }
+}

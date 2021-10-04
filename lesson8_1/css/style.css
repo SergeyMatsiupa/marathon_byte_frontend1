@@ -15,10 +15,36 @@
     /* transform: scale(1.2, 2); */
     /* transform: rotate(50deg); */
     /* transform: skew(20deg, 40deg); */
-    transform: scale(-1, 1);
+    /* transform: scale(-1, 1); */
+    transform: translate(-50%, -50%);
+    background: palevioletred;
+    transition-duration: 2s;
+    transition-property: transform;
+    transition-delay: 1s;
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    transition-timing-function: cubic-bezier(1, 0.3, 0.22, 1)
 }
 
 p, span {
     display: inline-block;
-    transform: translate(50%, 50%);
+    /* transform: translate(50%, 50%); */
+}
+
+button {
+    padding: 20px 50px;
+    background-color: aqua;
+    border: none;
+    margin-top: 200px;
+}
+
+button:hover {
+    width: 400px;
+    background-color: aquamarine;
+    color: white;
+    transition-duration: 3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
 }
