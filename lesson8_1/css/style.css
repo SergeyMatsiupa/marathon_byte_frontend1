@@ -12,7 +12,7 @@
 }
 
 .circle:hover {
-    /* transform: scale(1.2, 2); */
+    transform: scale(1.2, 2);
     /* transform: rotate(50deg); */
     /* transform: skew(20deg, 40deg); */
     /* transform: scale(-1, 1); */
