@@ -678,16 +678,22 @@ strong {
         margin-right: 0;
         max-width: none;
     }
+
+    .block-app-stores > a:nth-child(1) {
+        width: 46%;
+        margin-right: 15%;
+    }
+    .block-app-stores > a:nth-child(2) {
+        width: 39%;
+    }
+    .block-app-stores > a > img {
+        width: 100%;
+    }
     .block-app-stores {
         /* justify-content:center; */
         /* align-items:center; */
         /* align-content:center; */
-    }
-    /* .block-app-stores > a { */
-        /* width: 100%; */
-    /* } */
-    .block-app-stores > a > img {
-        width: 50%;
+        width: 100%;
     }
 }
 
