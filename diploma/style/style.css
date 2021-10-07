@@ -651,6 +651,11 @@ strong {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* justify-content: stretch; */
+        /* flex: 1; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 1; */
+        flex-basis: auto;
     }
     .logo {
         display: flex;
@@ -666,7 +671,7 @@ strong {
     }
     .footer-text-block > div:nth-child(1) {
         margin-right: 0;
-        max-width: none;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -693,7 +698,7 @@ strong {
         /* justify-content:center; */
         /* align-items:center; */
         /* align-content:center; */
-        width: 100%;
+        width: 80%;
     }
 }
 
