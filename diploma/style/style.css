@@ -386,7 +386,7 @@ strong {
 }
 
 .footer {
-    background: #F3C6BD;
+    /* background: #F3C6BD; */
     padding: 30px 0;
 }
 
@@ -398,6 +398,7 @@ strong {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    padding: 0 9%;
 }
 .footer-nav > div > a {
     text-decoration: none;
@@ -427,7 +428,7 @@ strong {
 }
 
 .footer-text-block {
-    padding: 115px 0 60px 0;
+    padding: 115px 9% 60px 9%;
     display: flex;
     flex-direction: row;
     font-size: 18px;
@@ -473,6 +474,14 @@ strong {
     font-weight: bold;
 }
 
+.footer-text-block > hr:nth-child(2) {
+    display: none;
+}
+
+.footer-text-block > div:nth-child(3) {
+    max-width: 17%;
+    margin-right: 10%;
+}
 
 
 
@@ -539,6 +548,13 @@ strong {
 }
 
 @media (max-width: 800px) {
+    .footer-text-block > div:nth-child(3) {
+        max-width: 100%;
+        margin-right: 0%;
+    }
+    .footer-nav {
+        padding: 0;
+    }
     .header {
         display: none;
         padding: 15px 0;
@@ -651,11 +667,16 @@ strong {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: stretch; */
+        /* justify-content: flex-start; */
         /* flex: 1; */
         /* flex-grow: 1; */
         /* flex-shrink: 1; */
-        flex-basis: auto;
+        /* flex-basis: auto; */
+    }
+    .footer-text-block > div {
+        /* flex: 1 100%; */
+        /* ??? */
+        width: 50%;
     }
     .logo {
         display: flex;
@@ -670,7 +691,8 @@ strong {
         margin-top: 30px;
     }
     .footer-text-block > div:nth-child(1) {
-        margin-right: 0;
+        margin: 0;
+        width: 90%;
         max-width: 100%;
         display: flex;
         flex-direction: column;
@@ -683,7 +705,6 @@ strong {
         margin-right: 0;
         max-width: none;
     }
-
     .block-app-stores > a:nth-child(1) {
         width: 46%;
         margin-right: 15%;
@@ -698,9 +719,48 @@ strong {
         /* justify-content:center; */
         /* align-items:center; */
         /* align-content:center; */
-        width: 80%;
+        /* width: 90%; */
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav > ul {
+        width: 50%;
+        margin-left: 16%;
+    }
+    .footer-nav > div {
+        width: 50%;
+        margin: 28px 0 20px 16%;
+    }
+    .footer-nav > div > a > img {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .footer > .line-main {
+        display: none;
+    }
+    .section-team-inbox {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .section-team-inbox > div:nth-child(2) {
+        margin: 0 0 70px 0;
+        max-width: 85%;
+    }
+    .section-team-inbox > div > div:nth-child(1) {
+        margin: 0;
+        text-align: center;
+    }
+    .footer-text-block > div:nth-child(n+2) {
+        margin-left: 16%;
     }
 }
+
+
+
+
 
 @media (max-width: 550px) {
     .container {
@@ -824,11 +884,53 @@ strong {
     .container-categories-text > div > .button, .button_white {
         width: 100%;
     }
+    .footer {
+        /* padding: 0 5%; */
+        padding: 0;
+    }
+    .footer-text-block > div {
+        padding: 0 5%;
+        /* width: 100%; */
+    }
+    .footer-text-block {
+        align-items: flex-start;
+    }
+    .block-app-stores > a:nth-child(1) {
+        width: 52%;
+        margin-right: 4%;
+    }
+    .block-app-stores > a:nth-child(2) {
+        width: 45%;
+    }
+    .footer-text-block > hr:nth-child(2) {
+        display: block;
+        /* color: red; */
+        width: 99%;
+        margin-top: 30px;
+    }
+    .footer-nav {
+        align-items: flex-start;
+        padding: 0 5%;
+    }
+    .footer-nav > ul {
+        /* width: 100%; */
+    }
+    .footer-text-block > div:nth-child(n+2) {
+        margin-left: 0;
+    }
+    .footer-nav > ul {
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer-nav > div {
+        width: 100%;
+        margin: 28px 0 20px 0;
+    }
 }
 
 @media (max-width: 360px) {
     .container {
-        max-width: 326px;
+        max-width: 305px;
     }
     .section-what-who {
         padding: 52px 0 52px 0;
