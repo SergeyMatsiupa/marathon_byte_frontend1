@@ -535,7 +535,7 @@ strong {
     }
     .categories-images-item {
         /* padding: 22px 25px 0 25px; */
-        width: 100%px;
+        width: 100%;
     }
     .categories-images-item > img {
         /* display: none; */
