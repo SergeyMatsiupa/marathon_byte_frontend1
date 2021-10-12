@@ -280,6 +280,54 @@ body {
 }
 
 
+
+
+.header-wrapper {
+    display: flex;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.header-wrapper > div:first-of-type {
+    max-width: 750px;
+    z-index: 1;
+}
+
+.header-wrapper > div:last-of-type {
+    position: absolute;
+    top: 0;
+    /* right: -70px; */
+    z-index: 0;
+    /* max-width: 70%; */
+    left: 39%;
+    width: 64%;
+}
+.header-wrapper > div:last-of-type > img {
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    font-size: 24px;
+    line-height: 34px;
+    /* max-width: 450px; */
+    max-width: 55%;
+    margin-bottom: 60px;
+}
+
+
+.button_white-2 {
+    background-color: white;
+    color: #3040C4;
+}
+
 .busy {
     /* padding: 100px 0; */
 }
@@ -347,7 +395,7 @@ body {
 }
 .section-team-inbox > div:nth-child(2) {
     margin-left: 7%;
-    max-width: 45%;
+    max-width: 55%;
 }
 .section-team-inbox > div > div:nth-child(1) {
     margin: 0 4%;
@@ -484,6 +532,127 @@ strong {
 }
 
 
+/* for top-menu */
+.check {
+    width: 30px;
+    height: 2px;
+    background: black;
+    transition: 500ms linear;
+}
+
+.check:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+
+.checkbox, .check-wrapper {
+    display: none;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+
+/* for free trial section */
+.section-free-trial {
+	background-color: #F4F5F7;
+	padding: 7% 5%;
+    display: flex;
+}
+
+.section-free-trial > div:nth-child(1) {
+    margin-right: 4%;
+}
+
+.section-free-trial > div:nth-child(1) > img {
+    width: 100%;
+}
+
+.section-free-trial__caption {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    margin-bottom: 24px;
+}
+
+.section-free-trial__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 26px;
+}
+
+.section-free-trial__email-buttn {
+    display: flex;
+}
+
+.section-free-trial__email {
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+
+.section-free-trial__text-small {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 16px;
+}
+
+
+/* for custom email-checkbox */
+label.section-free-trial__text {
+    margin-top: 15px;
+}
+
+.fake {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.fake::before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 10px;
+    height: 4px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    border-radius: 2px;
+    top: 50%;
+    left: 10%;
+    transform: rotate(45deg)
+}
+
+.fake::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    border-radius: 2px;
+    top: 31%;
+    left: 37%;
+    transform: rotate(-45deg)
+    }
+
+    .check-rewrited:checked ~ .fake::before, .check-rewrited:checked ~ .fake::after {
+        opacity: 1;
+        transition: 100ms linear;
+    }
+
+    .check-rewrited {
+        opacity: 0;
+    }
+
+
 
 @media (max-width: 1140px) {
     .container {
@@ -556,7 +725,7 @@ strong {
         padding: 0;
     }
     .header {
-        display: none;
+        /* display: none; */
         padding: 15px 0;
     }
     .container {
@@ -678,16 +847,16 @@ strong {
         /* ??? */
         width: 50%;
     }
-    .logo {
+    .footer-text-block > div > .logo {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .logo > div:first-child {
+    .footer-text-block > div > .logo > div:first-child {
         margin-right: unset;
     }
-    .logo > div:nth-child(2) {
+    .footer-text-block > div > .logo > div:nth-child(2) {
         margin-top: 30px;
     }
     .footer-text-block > div:nth-child(1) {
@@ -756,6 +925,126 @@ strong {
     .footer-text-block > div:nth-child(n+2) {
         margin-left: 16%;
     }
+        
+    .header-wrapper {
+        display: block;
+        position: static;
+        padding-bottom: 0;
+    }
+    .header-wrapper > div:last-of-type {
+        position: static;
+        margin-top: 40px;
+    }
+    .header-wrapper > div:last-of-type img {
+        width: 100%;
+    }
+    
+    /* for top-menu */
+    .checkbox, .check-wrapper {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+    }
+    .menu {
+        position: relative;
+    }
+    .check-wrapper {
+        z-index: 2;
+    }
+    .checkbox {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .check-wrapper > .check:first-of-type {
+        /* background-color: aliceblue; */
+        transform: rotate(45deg) translate(3px, 3px);
+    }
+    .checkbox:checked ~ .check-wrapper > .check:last-of-type {
+        /* background-color: aliceblue; */
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+    .checkbox:checked ~ .check-wrapper > .check:nth-child(2) {
+        opacity: 0;
+    }
+    .checkbox:checked ~ .header-nav {
+        display: block;
+        position: fixed;
+        background: #F4F5F7;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .header-nav > ul {
+        margin-top: 10%;
+    }
+    .header-li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* padding: 0; */
+    }
+    .header-li:not(:last-child) {
+        margin-right: 0;
+    }
+    .header-nav {
+        text-align: center;
+    }
+    .header-nav > div {
+        margin-left: 0;
+    }
+    /* for 1st section */
+    .title {
+        font-size: 60px;
+        line-height: 72px;
+        margin-bottom: 15px;
+    }
+    .header-text {
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 70%;
+        margin-bottom: 30px;
+    }
+    .header-wrapper > div:nth-child(2) {
+        margin-top: 4px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-wrapper > div:nth-child(2) > img {
+        width: 70%;
+    }
+    /* for custom email-checkbox */
+    .section-free-trial {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .section-free-trial > div:nth-child(2) {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-free-trial__text {
+        max-width: 80%;
+    }
+    .section-free-trial__email-buttn {
+        width: 80%;
+        justify-content: center;
+    }
+    .section-free-trial__email-buttn > button {
+        width: 45%;
+    }
+    .section-free-trial__email {
+        text-align: center;
+    }
 }
 
 
@@ -794,7 +1083,7 @@ strong {
 
 @media (max-width: 480px) {
     .container {
-        max-width: 310px;
+        max-width: 90%;
     }
     .section-what-who {
         padding: 50px 0 50px 0;
@@ -925,6 +1214,59 @@ strong {
     .footer-nav > div {
         width: 100%;
         margin: 28px 0 20px 0;
+    }
+    /* for top-menu */
+    .header:not(:first-child) {
+        background: white;
+    }
+    .header-container > div:nth-child(1) > div:nth-child(2) > .logo-regular {
+        display: none;
+    }
+    /* for 1st section */
+    .title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .header-text {
+        font-size: 24px;
+        line-height: 34px;
+        max-width: 100%;
+    }
+    .header-wrapper > div > .button-container > button {
+        width: 100%;
+    }
+    .header-wrapper > div:nth-child(2) > img {
+        width: 100%;
+    }
+    /* for custom email-checkbox */
+    .section-free-trial {
+        flex-direction: column;
+    }
+    .section-free-trial > div:nth-child(1) {
+        margin: 25px 0;
+    }
+    .section-free-trial > div:nth-child(2) {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .section-free-trial__email-buttn {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .section-free-trial__email {
+        text-align: center;
+        padding: 15px 0;
+        margin: 0 0 13px 0;
+    }
+    .section-free-trial__email-buttn > button {
+        width: 100%;
+    }
+    .section-free-trial__text-small {
+        margin-top: 0px;
+    }
+    .section-free-trial__text {
+        max-width: 100%;
     }
 }
 

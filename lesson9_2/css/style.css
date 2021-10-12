@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    background-color: beige;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-all {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+button {
+    background-color: pink;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.check {
+    width: 30px;
+    height: 2px;
+    background: black;
+    transition: 500ms linear;
+}
+
+.check:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox, .check-wrapper {
+    display: none;
+}
+
+
+@media (max-width: 1090px) {
+    .checkbox, .check-wrapper {
+        display: block;
+    }
+    .menu-all {
+        display: none;
+    }
+    .menu {
+        position: relative;
+    }
+    .check-wrapper {
+        z-index: 2;
+    }
+    .checkbox {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .check-wrapper > .check:first-of-type {
+        /* background-color: aliceblue; */
+        transform: rotate(45deg) translate(3px, 3px);
+    }
+    .checkbox:checked ~ .check-wrapper > .check:last-of-type {
+        /* background-color: aliceblue; */
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+    .checkbox:checked ~ .check-wrapper > .check:nth-child(2) {
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .menu-all {
+        display: block;
+        position: fixed;
+        background: beige;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    ul {
+        margin-top: 10%;
+    }
+
+    li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .menu-all {
+        text-align: center;
+    }
+}

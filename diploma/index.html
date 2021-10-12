@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="./wow/animate.css" />
+    <link rel="stylesheet" href="wow/animate.css">
 </head>
 <body>
     <header class="header">
@@ -28,34 +28,61 @@
                     </p>
                 </div>
             </div>
-            <nav class="header-nav">
-                <ul>
-                    <li class="header-li">
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="header-li">
-                        <a href="#">
-                            Stories
-                        </a>
-                    </li>
-                </ul>
-                <div>
-                    <button class="button">
-                        Get Started
-                    </button>
+            <div class="menu">
+                <input type="checkbox" class="checkbox">
+                <div class="check-wrapper">
+                    <div class="check">
+                    </div>
+                    <div class="check">
+                    </div>
+                    <div class="check">
+                    </div>
                 </div>
-
-            </nav>
+    
+                <nav class="header-nav">
+                    <ul>
+                        <li class="header-li">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="#">
+                                Stories
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="button">
+                            Get Started
+                        </button>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <section>
-            <div>
-                <p>
-                    Build stunning websites & apps.
-                </p>
+        <section class="header">
+            <div class="container header-wrapper">
+                <div>
+                    <h1 class="title">
+                        Build stunning websites & apps.
+                    </h1>
+                    <p class="header-text">
+                        Create live segments and target the right people for messages based on their behaviors.
+                    </p>
+                    <div class="button-container">
+                        <button class="button">
+                            Get started
+                        </button>
+                        <button class="button button_white-2">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/header.png" alt="header pic">
+                </div>
             </div>
         </section>
         <section class="section-what-who">
@@ -97,11 +124,11 @@
             </div>
             <div>
                 <div>
-                    <p class="text-block-caption-small text-mini__orange">Team Inbox</p>
-                    <h3 class="text-block-caption-big wow tada">
+                    <p class="text-block-caption-small text-mini__orange  wow tada">Team Inbox</p>
+                    <h3 class="text-block-caption-big">
                         Manage conversations
                     </h3>
-                    <p class="text-block-text">
+                    <p class="text-block-text wow bounceInDown">
                         One place to manage and respond to all conversations with leads and users. Receive messages from leads.
                     </p>
                 </div>
@@ -273,6 +300,33 @@
                 </div>
             </div>
         </section>
+        <section class="section-free-trial">
+            <div>
+                <img src="img/window.png" alt="window">
+            </div>
+            <div>
+                <h3 class="section-free-trial__caption">
+                    Start your free trial.
+                </h3>
+                <p class="section-free-trial__text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+                <div class="section-free-trial__email-buttn">
+                    <input type="email" placeholder="Enter your email" class="section-free-trial__email">
+                    <button class="button">
+                        Get Started
+                    </button>
+                </div>
+                <p class="section-free-trial__text-small">
+                    Free 14-day trial · Easy setup · Cancel any time. Check out <a href="#">Terms of Use</a>.
+                </p>
+                <label for="1" class="section-free-trial__text">
+                    <input class="check-rewrited" id=1 type="checkbox">
+                    <span class="fake"></span>
+                    <span>Also subscribe for special offers</span>
+                </label>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-text-block">
@@ -400,9 +454,11 @@
     </footer>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./wow/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="wow/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="script/script.js"></script>
 </body>
 </html>
