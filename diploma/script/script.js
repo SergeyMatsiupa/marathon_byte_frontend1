@@ -10,10 +10,11 @@ $('.about-items > div').on('click',function(){
 })
 
 // for Features section drop-block
-$('.section-features__content__drop-block_caption').on('click',function(){
+$('.section-features__content-drop-block__caption').on('click',function(){
     $(this).next('div').slideToggle(300);
-    $(this).toggleClass('toggleColorBlue');
-    $(this).nextAll('div.section-features__content__drop-block_line').toggleClass('toggleLine');
+    // $(this).toggleClass('toggleColorBlue');
+    // $(this).nextAll('div.section-features__content-drop-block__line').toggleClass('toggleLine');
+    $(this).parent().toggleClass('section-features__content__drop-block_showed');
 })
 
 // parallax test

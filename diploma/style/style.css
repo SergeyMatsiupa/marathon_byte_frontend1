@@ -781,7 +781,7 @@ label.section-free-trial__text {
     color: #009B4D;
 }
 
-.section-features__content__drop-block {
+.section-features__content-drop-block {
     display: grid;
     grid-template-areas: 
     "one two"
@@ -792,11 +792,18 @@ label.section-free-trial__text {
     /* row-gap: 20px; */
 }
 
-.section-features__content__drop-block_icon {
+.section-features__content-drop-block_showed {
+    /* background: red !important; */
+}
+.section-features__content-drop-block_showed > .section-features__content-drop-block__caption {
+    color: #3142C6 !important;
+}
+
+.section-features__content-drop-block__icon {
     grid-area: one;
 }
 
-.section-features__content__drop-block_caption {
+.section-features__content-drop-block__caption {
     grid-area: two;
     font-weight: bold;
     font-size: 22px;
@@ -806,7 +813,7 @@ label.section-free-trial__text {
     /* padding-bottom: 20px; */
 }
 
-.section-features__content__drop-block_text {
+.section-features__content-drop-block__text {
     grid-area: three;
     font-size: 18px;
     line-height: 26px;
@@ -814,7 +821,7 @@ label.section-free-trial__text {
     display: none;
 }
 
-.section-features__content__drop-block_line {
+.section-features__content-drop-block__line {
     height: 1px;
     background-color: rgba(43, 41, 45, 0.15);
     grid-area: four;
@@ -1251,7 +1258,7 @@ label.section-free-trial__text {
         padding: 20px 0 0 0;
         text-align: center;
     }
-    .section-features__content__drop-block {
+    .section-features__content-drop-block {
         text-align: left;
         padding: 10px 0 0 0;
     }
