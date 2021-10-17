@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="wow/animate.css">
+    <link rel="stylesheet" href="style/modal.css">
 </head>
 <body>
     <header class="header header-sticky">
@@ -53,7 +54,7 @@
                         </li>
                     </ul>
                     <div>
-                        <button class="button">
+                        <button id="get-start-btn-1" class="button">
                             Get Started
                         </button>
                     </div>
@@ -75,7 +76,7 @@
                         <button class="button">
                             Get started
                         </button>
-                        <button class="button button_white-2">
+                        <button id="modal-button" class="button button_white-2">
                             Learn More
                         </button>
                     </div>
@@ -587,6 +588,36 @@
             </nav>
         </div>
     </footer>
+    <div id="modal-1" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="img/custom-windows-1.jpg" alt="window">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quod fugiat accusamus dolorem, eveniet dicta.
+                </p>
+            </div>
+            <p class="close">
+                X
+            </p>
+        </div>
+    </div>
+    <div id="modal-2" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="img/david.jpeg" alt="david">
+                </div>
+                <p>
+                    Text for modal window 2 (the top one)
+                </p>
+            </div>
+            <p class="close">
+                X
+            </p>
+        </div>
+    </div>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
@@ -595,5 +626,6 @@
         new WOW().init();
     </script>
     <script src="script/script.js"></script>
+    <script src="script/modal.js"></script>
 </body>
 </html>
