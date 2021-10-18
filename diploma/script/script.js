@@ -28,3 +28,17 @@ $('.section-trusted__carousel').slick({
     arrows: false,
     // adaptiveHeight: true,
 })
+
+
+/* button-up */
+$(window).scroll(function(){
+    if($(this).scrollTop() > 500) {
+        $('#up').fadeIn();
+    } else {
+        $('#up').fadeOut();
+    }
+})
+
+$('#up').on('click', function(){
+    $('html','body').animate({scrollTop: 0}, 400)
+})

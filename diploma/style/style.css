@@ -909,6 +909,19 @@ label.section-free-trial__text {
 	color: #3142C5;
 }
 
+/* button-up */
+#up {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: pink;
+    padding: 20px;
+    border-radius: 50%;
+}
+#up > i {
+    color: white;
+}
 
 
 @media (max-width: 1140px) {
