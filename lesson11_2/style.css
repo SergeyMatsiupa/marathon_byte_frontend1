@@ -1,0 +1,41 @@
+.container {
+    max-width: 1000px;
+    margin: 90px auto;
+}
+
+.carusel {
+    max-width: 700px;
+    margin: 0 auto;
+    /* background: blue; */
+}
+
+/* somewhere here happened outlined (not by me) - so it's against this */
+.slick-initialized:focus, .slick-slide:focus {
+    outline: none !important;
+}
+
+.carusel > p {
+    text-align: center;
+}
+
+.slick-prev::before, .slick-next::before {
+	color: black;
+    font-size: 30px;
+}
+
+.slick-dots li button::before {
+	font-size: 15px;
+    opacity: .5;
+	color: blue;
+}
+
+.slick-dots li.slick-active button::before {
+	opacity: 1;
+	color: blue;
+}
+
+@media (max-width: 550px) {
+    .carusel {
+        max-width: 350px;
+    }
+}

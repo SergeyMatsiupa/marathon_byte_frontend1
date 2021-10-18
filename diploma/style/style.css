@@ -852,6 +852,62 @@ label.section-free-trial__text {
 }
 
 
+/* for trusted section */
+.section-trusted {
+    text-align: center;
+    padding: 0 20%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 66px;
+    position: relative;
+}
+.section-trusted::after {
+    content: '';
+    background: url("../img/boll.png");
+    width: 20%;
+    height: 18%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.section-trusted__caption {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3142C6;
+    margin-bottom: 28px;
+}
+
+.section-trusted__carousel {
+
+}
+
+.section-trusted__carousel__item {
+    margin-bottom: 34px;
+}
+
+.section-trusted__carousel__item-text {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 34px;
+}
+
+.section-trusted__carousel__item-sign {
+    font-size: 16px;
+    line-height: 24px;
+    /* margin: 35px 0; */
+}
+
+.slick-dots li button::before {
+	font-size: 11px;
+}
+
+.slick-dots li.slick-active button::before {
+	color: #3142C5;
+}
 
 
 

@@ -19,3 +19,12 @@ $('.section-features__content-drop-block__caption').on('click',function(){
 
 // parallax test
 $('.footer-text-block').parallax({imageSrc: './img/sky1.jpeg', speed: 0.01});
+
+// carousel
+$('.section-trusted__carousel').slick({
+    // autoplay: true,
+    autoplaySpeed: 1500,
+    dots: true,
+    arrows: false,
+    // adaptiveHeight: true,
+})
