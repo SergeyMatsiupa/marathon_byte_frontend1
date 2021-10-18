@@ -22,7 +22,7 @@ $('.footer-text-block').parallax({imageSrc: './img/sky1.jpeg', speed: 0.01});
 
 // carousel
 $('.section-trusted__carousel').slick({
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     dots: true,
     arrows: false,

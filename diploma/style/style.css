@@ -863,8 +863,8 @@ label.section-free-trial__text {
 .section-trusted::after {
     content: '';
     background: url("../img/boll.png");
-    width: 20%;
-    height: 18%;
+    width: 20vw;
+    height: 18vw;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1332,6 +1332,27 @@ label.section-free-trial__text {
         width: 10%;
         top: 45%;
     }
+    /* for trusted section */
+    .section-trusted {
+        padding-top: 40px;
+        margin-bottom: 25vw;
+        border: none;
+    }
+    .section-trusted__caption {
+        margin-bottom: 17px;
+    }
+    .section-trusted__carousel__item-text {
+        margin-bottom: 5px;
+    }
+    .section-trusted__carousel__item {
+        margin-bottom: 5px;
+    }
+    .section-trusted::after {
+        width: 33vw;
+        height: 30vw;
+        bottom: -30vw;
+        right: 33%;
+    }
 }
 
 
@@ -1615,7 +1636,21 @@ label.section-free-trial__text {
     .section-features__content > div {
         width: 95%;
     }
-
+    /* for trusted section */
+    .section-trusted {
+        padding: 0 4%;
+        text-align: left;
+        margin-bottom: 100vw;
+    }
+    .section-trusted__carousel__item-text {
+        margin-bottom: 36px;
+    }
+    .section-trusted::after {
+        width: 88vw;
+        height: 79vw;
+        bottom: -92vw;
+        right: 5%;
+    }
 }
 
 @media (max-width: 360px) {
