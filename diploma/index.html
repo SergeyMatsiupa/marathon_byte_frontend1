@@ -47,7 +47,7 @@
                 <nav class="header-nav">
                     <ul>
                         <li class="header-li">
-                            <a href="#">
+                            <a id="home" href="">
                                 Home
                             </a>
                         </li>
@@ -384,7 +384,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about-item__container">
                     <h3 class="text-block-caption-big">
@@ -492,17 +492,19 @@
                 <p class="section-free-trial__text">
                     Get notified about company updates, news and blog posts. We hate spam.
                 </p>
+                <p id="error-email" class="error-text">
+                </p>
                 <div class="section-free-trial__email-buttn">
-                    <input type="email" placeholder="Enter your email" class="section-free-trial__email">
-                    <button class="button">
+                    <input type="email" placeholder="Enter your email" class="section-free-trial__email" id="email-trial-id">
+                    <button class="button" id="submit-trial-id">
                         Get Started
                     </button>
                 </div>
                 <p class="section-free-trial__text-small">
                     Free 14-day trial · Easy setup · Cancel any time. Check out <a href="#">Terms of Use</a>.
                 </p>
-                <label for="1" class="section-free-trial__text">
-                    <input class="check-rewrited" id=1 type="checkbox">
+                <label for="spec-offs-id" class="section-free-trial__text">
+                    <input class="check-rewrited" id="spec-offs-id" type="checkbox">
                     <span class="fake"></span>
                     <span>Also subscribe for special offers</span>
                 </label>
@@ -665,6 +667,21 @@
     </div>
     <div id="up">
         <i class="fas fa-chevron-up"></i>
+    </div>
+    <div id="modal-3" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="img/durov.jpg" alt="david">
+                </div>
+                <p>
+                    The data was successfully passed to Telegram!
+                </p>
+            </div>
+            <p class="close">
+                X
+            </p>
+        </div>
     </div>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

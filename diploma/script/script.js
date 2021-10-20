@@ -40,5 +40,50 @@ $(window).scroll(function(){
 })
 
 $('#up').on('click', function(){
-    $('html','body').animate({scrollTop: 0}, 400)
+    $('html,body').animate({scrollTop: 0}, 400)
+})
+
+
+// scroll page to ID
+$('#home').on('click', function(e){
+    e.preventDefault();
+    $('html,body').animate({scrollTop: $('#about').offset().top}, 200)
+})
+
+// for to hide scrollbar when menu is showed
+$('.checkbox').change(function(){
+    if(this.checked) {
+        $('body').css({'overflow': "hidden"})
+    }
+    else {
+        $('body').css({'overflow': "visible"})
+    }
+})
+
+//send start trial form date to Telegram (through telegram.php on back-end)
+$('#submit-trial-id').on('click', function(e){
+    e.preventDefault();
+    let spec_offs = $('#spec-offs-id').is(":checked");
+    let email = $('#email-trial-id').val().trim();
+    if (email=="") {
+        $('#error-email').text('Enter your email');
+        return false;
+    }
+    $.ajax({
+        url: 'ajax/telegram.php',
+        type: 'POST',
+        cache: false,
+        data: {'email': email, 'spec_offs': spec_offs},
+        dataType: 'html',
+        beforeSend: function(){
+            $('#submit-trial-id').prop('disabled', true);
+        },
+        success: function(){
+            // alert('its okay');
+            $('#error-email').val('');
+            $('#email-trial-id').val('');
+            $('#submit-trial-id').prop('disabled', false);
+            $('#modal-3').fadeIn();
+        }
+    })
 })

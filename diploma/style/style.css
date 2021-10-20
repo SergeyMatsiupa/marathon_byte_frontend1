@@ -597,6 +597,12 @@ strong {
     margin-bottom: 26px;
 }
 
+.error-text {
+    color: red;
+    font-weight: bold;
+    text-align: left;
+}
+
 .section-free-trial__email-buttn {
     display: flex;
 }

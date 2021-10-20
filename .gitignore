@@ -1,3 +1,5 @@
 _work
 .vscode/
 .vscodeignore
+token.txt
+chat_id.txt
