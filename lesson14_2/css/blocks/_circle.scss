@@ -1,0 +1,9 @@
+$size : 100px;
+
+.cirle {
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    background-color: black;
+    margin-bottom: $size;
+}

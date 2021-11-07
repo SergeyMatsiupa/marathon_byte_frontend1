@@ -1,0 +1,198 @@
+$check-width: 6.4vw;
+$check-height: 0.70vw;
+$check-gap-height: 0.8vw;
+
+.head {
+    @include flex-column-center;
+    background-image: url('../img/background_top.png');
+    // width: 100%;
+    height: 52vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    text-align: center;
+    @include for-other-viewport($width-small) {
+        background-image: url('../img/background_top_sm.png');
+        height: 203vw;
+
+    }
+    &__container{
+        @include flex-column-center;
+    }
+    &__top-menu {
+        @include flex-center-space-b;
+        width: 100%;
+        padding: 65px 0 0 0;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        @include for-other-viewport($width-big) {
+            padding: 3.66vw 0 0 0;
+            font-size: 0.86vw;
+            line-height: 1.58vw;
+        }
+        @include for-other-viewport($width-small) {
+            padding: 7.43vw 0 0 0;
+            font-size: 8vw;
+            line-height: 8vw;
+        }
+        &__menu {
+            @include flex-center-space-b;
+            height: 58px;
+            @include for-other-viewport($width-big) {
+                height: 3.27vh;
+            }
+            @include for-other-viewport($width-small) {
+                position: relative;
+                flex-direction: row-reverse;
+                width: 100%;
+                height: 13.9vw;
+                // height: $check-gap-height * 2  +  $check-height * 3;
+            }
+            &__switchable {
+                @include for-other-viewport($width-small) {
+                    display: none;
+                }
+            }
+            &__li {
+                display: inline-block;
+                margin-right: 41px;
+                @include for-other-viewport($width-big) {
+                    margin-right: 2.31vw;
+                }
+                @include for-other-viewport($width-small) {
+                    display: block;
+                    margin: 4vw 0 0 0;
+                }
+            }
+            &__a {
+                text-decoration: none;
+            }
+            &__a:hover, &__a:focus, &__a:active, &__a:visited {
+                color: white;
+            }
+            &__a:hover {
+                font-weight: bold;
+            }
+            // for mobile menu
+            &__checkbox {
+                position: absolute;
+                z-index: 3;
+                display: block;
+                width: $check-width;
+                height: 3.84vw;
+                opacity: 0;
+                }
+            &__check {
+                width: $check-width;
+                height: $check-height;
+                background: white;
+                transition: 500ms linear;
+            }
+            &__check:not(:last-of-type) {
+                margin-bottom: $check-gap-height;
+            }
+            &__checkbox {
+                display: none;
+                @include for-other-viewport($width-small) {
+                    display: block;
+                    right: 0;
+                }
+            }
+            &__check-wrapper {
+                display: none;
+                @include for-other-viewport($width-small) {
+                    display: flex;
+                    flex-direction: column;
+                    width: $check-width;
+                    align-items: flex-end;
+                    z-index: 2;
+                }
+            }
+            &__checkbox:checked ~ &__check-wrapper > &__check:first-of-type {
+                // background-color: red;
+                transform: rotate(45deg) translate(20%, 140%);
+            }
+            &__checkbox:checked ~ &__check-wrapper > &__check:last-of-type {
+                /* background-color: aliceblue; */
+                transform: rotate(-45deg) translate(20%, -140%);
+                width: 100%;
+            }
+            &__checkbox:checked ~ &__check-wrapper > &__check:nth-child(2) {
+                opacity: 0;
+            }
+            &__checkbox:checked ~ .head__top-menu__menu__switchable {
+                display: block;
+                position: fixed;
+                background: rgb(48,48,49);
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+            @for $i from 1 through 3 {
+                &__check-wrapper > &__check:nth-child(#{$i}) {
+                    width: 100% - 25% * ($i - 1);
+                }
+            }
+        }
+        &__smedia {
+            @include for-other-viewport($width-small) {
+                display: none;
+            }
+        }
+    }
+    &__heading {
+        margin: 159px 0 0 0;
+        font-weight: bold;
+        font-size: 74px;
+        line-height: 84px;
+        letter-spacing: 0.2px;
+        width: 672px;
+        @include for-other-viewport($width-big) {
+            margin: 8.95vw 0 0 0;
+            font-size: 4.17vw;
+            line-height: 4.73vw;
+            width: 37.84vw;
+        }
+        @include for-other-viewport($width-small) {
+            width: 80vw;
+            font-weight: normal;
+            font-size: 11.51vw;
+            line-height: 13.2vw;
+            margin: 30.95vw 0 0 0;
+        }
+    }
+    &__text {
+        margin: 28px 0 90px 0;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        width: 766px;
+        @include for-other-viewport($width-big) {
+            margin: 1.58vw 0 5.066vw 0;
+            font-size: 1.58vw;
+            line-height: 2.52vw;
+            width: 43.13vw;
+        }
+        @include for-other-viewport($width-small) {
+            margin: 6.47vw 0 13.55vw 0;
+            font-size: 6.71vw;
+            line-height: 9.6vw;
+            width: 63.55vw;
+        }
+    }
+    &__text > p {
+        display: inline;
+    }
+    &__text > p:nth-child(2) {
+        @include for-other-viewport($width-small) {
+            display: none;
+        }
+    }
+}
+
+
+

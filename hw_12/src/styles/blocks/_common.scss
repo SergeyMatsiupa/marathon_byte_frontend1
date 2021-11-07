@@ -1,0 +1,25 @@
+.container {
+    max-width: 1225px;
+    width: 65%;
+    // background-color: aqua;
+    // margin: 0 auto;
+    @include for-other-viewport($width-small) {
+        width: 84%;
+    }
+}
+
+.social-media {
+    @include flex-center-space-b;
+    gap: 33px;
+    height: 32px;
+    @include for-other-viewport($width-big) {
+        gap: 1.86vw;
+        height: 1.8vw;
+    }
+}
+.social-media > a {
+    height: 100%;
+}
+.social-media > a > img {
+    height: 100%;
+}

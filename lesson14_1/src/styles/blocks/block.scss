@@ -1,0 +1,17 @@
+.block {
+    &__title {
+        color: red;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__avatar {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: red;
+    }
+}

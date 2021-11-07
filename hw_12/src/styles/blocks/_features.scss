@@ -1,0 +1,90 @@
+.features {
+    @include flex-column-center;
+    &__container {
+        @include flex-column-center;
+        margin-top: 6.48vw;
+        @include for-other-viewport($width-small) {
+            margin-top: 26.38vw;
+        }
+        &__columns-3 {
+            @include flex-center-space-b;
+            margin: 5.52vw 0 0 0;
+            gap: 4.28vw;
+            max-width: 844px;
+            width: 47.52vw;
+            @include for-other-viewport($width-small) {
+                flex-direction: column;
+                margin: 20.38vw 0 0 0;
+                gap: 19.66vw;
+            }
+            &__column {
+                @include flex-column-center;
+                text-align: center;
+            }
+            &__icon {
+                max-width: 45.75px;
+                width: 2.576vw;
+                margin-bottom: min(28px, 1.58vw);
+                @include for-other-viewport($width-small) {
+                    width: 10.98vw;
+                    margin-bottom: 6.62vw;
+                }
+            }
+        }
+        &__columns-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: min(68px, 3.83vw);
+            margin: min(21vw, 373px) 0 0 0;
+            // text-align: left;
+            @include for-other-viewport($width-small) {
+                margin: 45.08vw 0 0 0;
+                flex-direction: column;
+                align-items: center;
+                gap: 17vw;
+            }
+            &__img-block {
+                width: min(624px, 33.2vw);
+                @include for-other-viewport($width-small) {
+                    width: 90.89vw;
+                }
+            }
+        }
+        &__columns-2 > div {
+            @include for-other-viewport($width-small) {
+                @include flex-column-center;
+            }
+        }
+        &__columns-2 > div > .heading-2-text, &__columns-2 > div > .text-under-heading {
+            text-align: left;
+            @include for-other-viewport($width-small) {
+                text-align: center;
+            }
+        }
+        &__columns-2 > div > .text-under-heading:nth-child(3) {
+            display: none;
+        }
+        // &__columns-2 > div:nth-child(1) {
+            // position: relative;
+        // }
+        &__columns-2 > div > button {
+            margin: min(70px, 3.2vw) 0 0 0;
+            @include for-other-viewport($width-small) {
+                margin: 16.55vw 0 0 0;
+            }
+            // position: absolute;
+            // bottom: 0px;
+        }
+    }
+    &__container > .text-under-heading__first {
+        @include for-other-viewport($width-small) {
+            margin-top: 6.47vw;
+        }
+    }
+    &__container > .text-under-heading:nth-child(3) {
+        @include for-other-viewport($width-small) {
+            display: none;
+        }
+    }
+}

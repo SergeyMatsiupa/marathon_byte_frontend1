@@ -1,0 +1,110 @@
+.head {
+    background-color: aqua;
+
+    &__content {
+        color: red;
+
+        &::after {
+            content: "1";
+        }
+
+        &--mod {
+            color: red;
+        }
+    }
+}
+
+.head2 {
+    background-color: aqua;
+
+    &__content {
+        color: red;
+    }
+}
+
+// .head__content {
+
+// }
+
+// .head__content::after{
+
+// }
+
+// .head__content--mod {
+
+// }
+
+
+p { 
+    @if 1 + 1 == 2 { 
+        border: 1px solid;
+    } 
+    @if 5 < 3 { 
+        border: 2px dotted;
+    } 
+    @if null { 
+        border: 3px double;
+    } 
+}
+
+
+@each $count in 1,2,3 {
+    .block#{$count} {
+        border: #{$count}px solid black;
+    }
+}
+
+@mixin large-text {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.block7 {
+    @include large-text;
+}
+
+.block8 {
+    @include large-text;
+}
+
+.block9 {
+    @include large-text;
+}
+
+
+$width:768px;
+
+@mixin phones {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+.block77 {
+    color: black;
+    background-color: red;
+
+    @include tablets {
+
+    }
+
+    @include phones {
+        color: green;
+        background-color: black;
+    }
+}
+
+.block__content {
+
+}
+
+.block__test {
+
+}

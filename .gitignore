@@ -3,3 +3,5 @@ _work
 .vscodeignore
 token.txt
 chat_id.txt
+node_modules/
+dist/

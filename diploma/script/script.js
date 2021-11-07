@@ -21,7 +21,7 @@ $('.section-features__content-drop-block__caption').on('click',function(){
 $('.footer-text-block').parallax({imageSrc: './img/sky1.jpeg', speed: 0.01});
 
 // carousel
-$('.section-trusted__carousel').slick({
+$('.section-trusted-carousel').slick({
     autoplay: true,
     autoplaySpeed: 1500,
     dots: true,
