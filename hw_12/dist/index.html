@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>HW-12</title>
+</head>
+<body>
+    <header class="head">
+        <div class="container head__container">
+            <div class="head__top-menu">
+                <nav class="head__top-menu__menu">
+                    <input type="checkbox" class="head__top-menu__menu__checkbox">
+                    <div class="head__top-menu__menu__check-wrapper">
+                        <div class="head__top-menu__menu__check">
+                        </div>
+                        <div class="head__top-menu__menu__check">
+                        </div>
+                        <div class="head__top-menu__menu__check">
+                        </div>
+                    </div>
+                    <ul class="head__top-menu__menu__switchable">
+                        <li class="head__top-menu__menu__li">
+                            <a href="#" class="head__top-menu__menu__a">
+                                Home
+                            </a>
+                        </li>
+                        <li class="head__top-menu__menu__li">
+                            <a href="#" class="head__top-menu__menu__a" id="product-link-id">
+                                Product
+                            </a>
+                        </li>
+                        <li class="head__top-menu__menu__li">
+                            <a href="#" class="head__top-menu__menu__a">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="head__top-menu__menu__li">
+                            <a href="#" class="head__top-menu__menu__a">
+                                About
+                            </a>
+                        </li>
+                        <li class="head__top-menu__menu__li">
+                            <a href="#" class="head__top-menu__menu__a">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="img/icons/figma_i.svg" alt="Figma"  class="img-h100p">
+                </nav>
+                <div class="head__top-menu__smedia">
+                    <div class="social-media">
+                        <a href="https://twitter.com/">
+                            <img src="img/icons/twitter_i.svg" alt="Twitter">
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <img src="img/icons/fb_i.svg" alt="FaceBook">
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <img src="img/icons/linkedin_i.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="head__heading">
+                The best products start with Figma
+            </h1>
+                <div class="head__text">
+                    <p>
+                        Most calendars are designed for teams.
+                    </p>
+                    <p>
+                        Slate is designed for freelancers
+                    </p>
+                </div>
+            <button id="try-for-free-btn" class="button_blue">
+                Try For Free
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="features" id="features-id">   
+            <div class="container features__container">
+                <h2 class="heading-2-text">
+                    Features
+                </h2>
+                <p class="text-under-heading text-under-heading__first">
+                    Most calendars are designed for teams.
+                </p>
+                <p class="text-under-heading">
+                    Slate is designed for freelancers
+                </p>
+                <div class="features__container__columns-3">
+                    <div class="features__container__columns-3__column">
+                        <div class="features__container__columns-3__icon">
+                            <img src="img/icons/features_1.svg" alt="Future 1"  class="img-w100p">
+                        </div>
+                        <h3 class="heading-small">
+                            OpenType features
+                            <br>
+                            Variable fonts
+                        </h3>
+                        <p class="text-small">
+                            Slate helps you see how many more days you need to work to reach your financial goal.
+                        </p>
+                    </div>
+                    <div class="features__container__columns-3__column">
+                        <div class="features__container__columns-3__icon">
+                            <img src="img/icons/features_2.svg" alt="Future 2"  class="img-w100p">
+                        </div>
+                        <h3 class="heading-small">
+                            Design with real data
+                        </h3>
+                        <p class="text-small">
+                            Slate helps you see how many more days you need to work to reach your financial goal.
+                        </p>
+                    </div>
+                    <div class="features__container__columns-3__column">
+                        <div class="features__container__columns-3__icon">
+                            <img src="img/icons/features_3.svg" alt="Future 3"  class="img-w100p">
+                        </div>
+                        <h3 class="heading-small">
+                            Fastest way to take action
+                        </h3>
+                        <p class="text-small">
+                            Slate helps you see how many more days you need to work to reach your financial goal.
+                        </p>
+                    </div>
+                </div>
+                <div class="features__container__columns-2">
+                    <div>
+                        <h2 class="heading-2-text ">
+                            Fastest way to organize
+                        </h2>
+                        <p class="text-under-heading text-under-heading__first">
+                            Most calendars are designed for teams.
+                        </p>
+                        <p class="text-under-heading">
+                            Slate is designed for freelancers
+                        </p>
+                        <button id="try-for-free-btn-2" class="button_blue">
+                            Try For Free
+                        </button>
+                    </div>
+                    <div class="features__container__columns-2__img-block">
+                        <img src="img/macbook_pro.png" alt="Macbook Pro" class="img-w100p">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="modal-wnd-free-id" class="modal-overlay">
+        <div class="modal-wnd modal-wnd__free">
+            <div  class="modal-wnd__wrapper">
+                <div class="modal-wnd__content">
+                    <p>
+                        Chose your Operation System:
+                    </p>
+                    <div class="modal-wnd__content__os-list">
+                        <div class="modal-wnd__content__os-list__elem">
+                            <input type="radio" id="win-radio-id" value="win-radio" name="os-radio" checked>
+                            <label for="win-radio-id">
+                                Windows
+                            </label>
+                        </div>
+                        <div class="modal-wnd__content__os-list__elem">
+                            <input type="radio" id="mac-radio-id" value="mac-radio" name="os-radio">
+                            <label for="mac-radio-id">
+                                macOS
+                            </label>
+                        </div>
+                        <div class="modal-wnd__content__os-list__elem">
+                            <input type="radio" id="lin-radio-id" value="lin-radio" name="os-radio">
+                            <label for="lin-radio-id">
+                                Linux
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button id="download-btn-id" class="button_blue modal-wnd__content__btn">
+                    Download
+                </button>
+            </div>
+            <p class="close-wnd">
+                X
+            </p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script/modal.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
