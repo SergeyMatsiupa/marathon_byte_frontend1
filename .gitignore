@@ -1,7 +1,5 @@
+.vscode
+node_modules
 _work
-.vscode/
-.vscodeignore
-token.txt
 chat_id.txt
-node_modules/
-# dist/
+token.txt
